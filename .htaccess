@@ -1,0 +1,17 @@
+DirectoryIndex index.php
+RewriteEngine on
+AuthUserFile C:\xampp\htdocs\.htpasswd
+AuthType Basic
+AuthName "restricted Area"
+Require valid-user
+order allow,deny
+allow from 192.168.2.10
+allow from 192.168.2.14
+allow from 192.168.2.9
+allow from 192.168.2.11
+allow from 192.168.2.8
+allow from ::1
+allow from 127.0.0.1
+
+
+
